@@ -13,7 +13,7 @@ const Signup = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", { email, password });
+      const res = await axios.post("https://deduction-valueshare-backend.onrender.com/api/auth/signup", { email, password });
       localStorage.setItem("token", res.data.token);
       alert(res.data.msg);
       navigate("/admin-dashboard"); // Redirect to dashboard
