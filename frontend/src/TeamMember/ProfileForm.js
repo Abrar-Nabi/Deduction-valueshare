@@ -18,7 +18,7 @@ const ProfileInfoForm = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await fetch("http://localhost:5000/api/team-members/profile", {
+        const res = await fetch("https://deduction-valueshare-backend.onrender.com/api/team-members/profile", {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });
@@ -57,7 +57,7 @@ const ProfileInfoForm = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/team-members/profile", {
+      const res = await fetch("https://deduction-valueshare-backend.onrender.com/api/team-members/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
