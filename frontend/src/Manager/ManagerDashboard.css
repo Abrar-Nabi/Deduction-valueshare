@@ -1,0 +1,68 @@
+.manager-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .manager-dashboard-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .team-members-title {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .team-members-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .team-member-item {
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+  
+    transition: background-color 0.3s ease;
+  }
+  
+  .team-member-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .team-member-details {
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+    gap: 5px;
+  }
+  
+
+  
+  .message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    margin-top: 20px;
+  }
+  
+  
+  .loading-message {
+    font-size: 1.2em;
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,132 @@
+.admin-dashboard {
+  position: relative;
+  padding: 20px;
+}
+
+.toggle-form-button {
+  margin-bottom: 20px;
+}
+
+.user-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  max-width: 500px;
+  margin: 0 auto;
+  transform: translateY(20px);
+}
+
+.form-input,
+.form-select,
+.form-submit-button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-submit-button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.form-submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.list-title {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.user-list,
+.manager-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.user-item,
+.manager-item {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-item:last-child,
+.manager-item:last-child {
+  border-bottom: none;
+}
+
+.user-item a,
+.manager-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-item:hover,
+.manager-item:hover {
+  background-color: #f4f4f4;
+}
+
+
+.back-button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

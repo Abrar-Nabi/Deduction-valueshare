@@ -1,0 +1,42 @@
+.admin-home {
+    display: flex;
+ 
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #000000;
+
+    transition: all 0.3s ease-in-out;
+  }
+  .user-box h3{
+    color: #000000;
+  }
+  
+  .user-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-icon {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,46 @@
+.profile-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-decoration: none;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.profile-box:hover {
+  transform: scale(1.05);
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-icon {
+  font-size: 50px; /* Adjust the size of the icon */
+  margin-bottom: 10px;
+  color: #757575; /* Customize the icon color */
+}
+
+.box-content h3 {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
