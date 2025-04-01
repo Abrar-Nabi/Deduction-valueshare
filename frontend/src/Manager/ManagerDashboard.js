@@ -21,7 +21,7 @@ const ManagerDashboard = () => {
         return;
       }
 
-      const res = await axios.get("http://localhost:5000/api/admin/team-members", {
+      const res = await axios.get("https://deduction-valueshare-backend.onrender.com/api/admin/team-members", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTeamMembers(res.data);
