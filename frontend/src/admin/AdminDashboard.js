@@ -32,7 +32,7 @@ const AdminDashboard = () => {
         setError("No authentication token found.");
         return;
       }
-      const res = await axios.get("http://localhost:5000/api/admin/team-members", {
+      const res = await axios.get("https://deduction-valueshare-backend.onrender.com/api/admin/team-members", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(res.data);
@@ -48,7 +48,7 @@ const AdminDashboard = () => {
         setError("No authentication token found.");
         return;
       }
-      const res = await axios.get("http://localhost:5000/api/admin/managers", {
+      const res = await axios.get("https://deduction-valueshare-backend.onrender.com/api/admin/managers", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setManagers(res.data);
@@ -69,8 +69,8 @@ const AdminDashboard = () => {
     try {
       const endpoint =
         formData.role === "manager"
-          ? "http://localhost:5000/api/admin/add-manager"
-          : "http://localhost:5000/api/admin/add-team-member";
+          ? "https://deduction-valueshare-backend.onrender.com/api/admin/add-manager"
+          : "https://deduction-valueshare-backend.onrender.com/api/admin/add-team-member";
 
       const data =
         formData.role === "manager"
